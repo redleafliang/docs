@@ -177,7 +177,9 @@
   "components": {
     "schemas": {
       "HelloWorldComponent": {
-        "x-mcp-direct-component": true,
+        "x-mcp-component": {
+          "type": "component"
+        },
         "type": "object",
         "properties": {
           "sayHello": {
