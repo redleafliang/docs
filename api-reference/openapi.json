@@ -22,6 +22,9 @@
     "/plants": {
       "get": {
         "description": "Returns all plants from the system that the user has access to",
+        "x-mcp": {
+          "enabled": true
+        },
         "parameters": [
           {
             "name": "limit",
