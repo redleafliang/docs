@@ -175,9 +175,10 @@
     }
   },
   "components": {
-    "x-components": {
-      "HelloWorld": {
+    "schemas": {
+            "HelloWorld": {
         "type": "object",
+        "x-component": true,
         "properties": {
           "sayHello": {
             "type": "object",
@@ -201,9 +202,7 @@
             }
           }
         }
-      }
-    },
-    "schemas": {
+      },
       "Plant": {
         "required": [
           "name"
