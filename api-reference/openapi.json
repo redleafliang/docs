@@ -25,99 +25,28 @@
     }
   ],
   "paths": {
-    "/plants": {
-      "get": {
-        "description": "Returns all plants from the system that the user has access to",
-        "parameters": [
-          {
-            "name": "limit",
-            "in": "query",
-            "description": "The maximum number of results to return",
-            "schema": {
-              "type": "integer",
-              "format": "int32"
-            }
-          }
-        ],
-        "x-mock-response": {
-          "content": [
-            {
-              "name": "Rose",
-              "tag": "flower"
-            },
-            {
-              "name": "Cactus",
-              "tag": "succulent"
-            },
-            {
-              "name": "Bamboo",
-              "tag": "tree"
-            }
-          ]
+    "/plants": [
+        {
+          "name": "Rose",
+          "tag": "flower"
         },
-        "responses": {
-          "200": {
-            "description": "Plant response",
-            "content": {
-              "application/json": {
-                "schema": {
-                  "type": "array",
-                  "items": {
-                    "$ref": "#/components/schemas/Plant"
-                  }
-                }
-              }
-            }
-          },
-          "400": {
-            "description": "Unexpected error",
-            "content": {
-              "application/json": {
-                "schema": {
-                  "$ref": "#/components/schemas/Error"
-                }
-              }
-            }
-          }
-        }
-      },
-      "post": {
-        "description": "Creates a new plant in the store",
-        "requestBody": {
-          "description": "Plant to add to the store",
-          "content": {
-            "application/json": {
-              "schema": {
-                "$ref": "#/components/schemas/NewPlant"
-              }
-            }
-          },
-          "required": true
+        {
+          "name": "Cactus",
+          "tag": "succulent"
         },
-        "responses": {
-          "200": {
-            "description": "plant response",
-            "content": {
-              "application/json": {
-                "schema": {
-                  "$ref": "#/components/schemas/Plant"
-                }
-              }
-            }
-          },
-          "400": {
-            "description": "unexpected error",
-            "content": {
-              "application/json": {
-                "schema": {
-                  "$ref": "#/components/schemas/Error"
-                }
-              }
-            }
-          }
+        {
+          "name": "Bamboo",
+          "tag": "tree"
+        },
+        {
+          "name": "Sunflower",
+          "tag": "flower"
+        },
+        {
+          "name": "Pine",
+          "tag": "tree"
         }
-      }
-    },
+      ],
     "/plants/{id}": {
       "delete": {
         "description": "Deletes a single plant based on the ID supplied",
