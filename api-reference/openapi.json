@@ -3,6 +3,34 @@
   "x-mcp": {
     "enabled": true
   },
+  "x-components": {
+    "HelloWorld": {
+      "type": "object",
+      "properties": {
+        "sayHello": {
+          "type": "object",
+          "properties": {
+            "input": {
+              "type": "object",
+              "properties": {
+                "name": {
+                  "type": "string"
+                }
+              }
+            },
+            "output": {
+              "type": "object",
+              "properties": {
+                "message": {
+                  "type": "string"
+                }
+              }
+            }
+          }
+        }
+      }
+    }
+  },
   "x-mock": {
     "enabled": true
   },
