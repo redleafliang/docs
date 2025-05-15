@@ -176,6 +176,33 @@
   },
   "components": {
     "schemas": {
+      "HelloWorldComponent": {
+        "x-mcp-direct-component": true,
+        "type": "object",
+        "properties": {
+          "sayHello": {
+            "type": "object",
+            "properties": {
+              "input": {
+                "type": "object",
+                "properties": {
+                  "name": {
+                    "type": "string"
+                  }
+                }
+              },
+              "output": {
+                "type": "object",
+                "properties": {
+                  "message": {
+                    "type": "string"
+                  }
+                }
+              }
+            }
+          }
+        }
+      },
       "Plant": {
         "required": [
           "name"
