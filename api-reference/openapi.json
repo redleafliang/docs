@@ -46,7 +46,21 @@
                   "items": {
                     "$ref": "#/components/schemas/Plant"
                   }
-                }
+                },
+                "example": [
+                  {
+                    "name": "Rose",
+                    "tag": "flower"
+                  },
+                  {
+                    "name": "Cactus",
+                    "tag": "succulent"
+                  },
+                  {
+                    "name": "Bamboo",
+                    "tag": "tree"
+                  }
+                ]
               }
             }
           },
