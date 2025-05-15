@@ -1,5 +1,8 @@
 {
   "$schema": "http://json-schema.org/draft-07/schema#",
+  "x-mcp": {
+    "enabled": true
+  },
   "type": "object",
   "title": "Hello World Component",
   "description": "一个简单的Hello World组件",
