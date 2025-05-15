@@ -1,5 +1,8 @@
 {
   "openapi": "3.1.0",
+  "x-mcp": {
+    "enabled": true
+  },
   "info": {
     "title": "OpenAPI Plant Store",
     "description": "A sample API that uses a plant store as an example to demonstrate features in the OpenAPI specification",
@@ -20,9 +23,6 @@
   ],
   "paths": {
     "/plants": {
-      "x-mcp": {
-        "enabled": true
-      },
       "get": {
         "description": "Returns all plants from the system that the user has access to",
         "parameters": [
